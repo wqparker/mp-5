@@ -17,10 +17,10 @@ async function isValidUrl(url: string): Promise<boolean> {
     try {
       await dns.lookup(urlObj.hostname);
       return true;
-    } catch (_err) {
+    } catch {
       return false;
     }
-  } catch (_) {
+  } catch {
     return false;
   }
 }
