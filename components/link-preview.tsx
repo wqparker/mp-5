@@ -8,7 +8,7 @@ const PreviewContainer = styled.div`
   background: #fff;
   border-radius: 1rem;
   padding: 1.5rem;
-  max-width: 32rem;
+  max-width: 64rem;
   margin: 2rem auto;
   box-shadow: 0 4px 6px rgba(0,0,0,0.1);
   display: flex;
