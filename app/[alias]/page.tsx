@@ -1,7 +1,6 @@
 import { redirect } from "next/navigation";
 import getOriginalUrl from "@/lib/get-original-url";
 
-// logic to handle redirection to the target url
 type Props = {
   params: {
     alias: string;
