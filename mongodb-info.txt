@@ -1,0 +1,4 @@
+Username: wqparker
+Password: vQtBHlCOITRqjFlK
+
+Connection String: mongodb+srv://wqparker:vQtBHlCOITRqjFlK@cluster0.e6oazax.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0
