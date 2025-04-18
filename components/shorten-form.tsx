@@ -9,7 +9,7 @@ const FormContainer = styled.form`
   background: #fff;
   border-radius: 1rem;
   padding: 1.5rem;
-  max-width: 32rem;
+  max-width: 64rem;
   margin: 2rem auto;
   box-shadow: 0 4px 6px rgba(0,0,0,0.1);
   display: flex;
@@ -80,13 +80,13 @@ const ErrorMsg = styled.p`
   font-size: 0.875rem;
 `;
 
-type Props = {
-  onSuccess: (alias: string) => void;
-};
-
 // big part of the project here, taking in the inputs, moving data around to where it needs to be
 // also all the styling for the actual component which is essentially our entire webpage
-export default function ShortenForm({ onSuccess }: Props) {
+export default function ShortenForm({
+    onSuccess,
+}: {
+    onSuccess: (alias: string) => void;
+}) {
   const [url, setUrl] = useState("");
   const [alias, setAlias] = useState("");
   const [error, setError] = useState("");
