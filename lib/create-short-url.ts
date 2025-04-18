@@ -17,7 +17,7 @@ async function isValidUrl(url: string): Promise<boolean> {
     try {
       await dns.lookup(urlObj.hostname);
       return true;
-    } catch (err) {
+    } catch (_err) {
       return false;
     }
   } catch (_) {
